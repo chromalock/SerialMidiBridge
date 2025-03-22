@@ -194,7 +194,7 @@ getMidiPorts()
 # make components for Gui
 # length of longest combo box string.
 wc = len(max(spStrings+midiinPorts+midioutPorts, key=len))
-scbString = 'ScanPorts'
+scbString = 'Scan Ports'
 stbString = 'Start'
 exbString = 'Exit'
 # length of longest button string.
@@ -254,7 +254,7 @@ layout = [[sg.Text(spText,  size=tsize), sg.Text(':'), spCombo],
           [scButton, stButton, exButton]
           ]
 enabled = False
-window = sg.Window('Serial-MIDI bridge', layout,
+window = sg.Window('serial2midi', layout,
                    font=myfont)  # make font a little bigger
 # Main event loop
 while True:

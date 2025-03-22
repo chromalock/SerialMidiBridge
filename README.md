@@ -1,6 +1,6 @@
-### SerialMidiBridge
+### serial2midi
 
-This is a replacement for [https://github.com/projectgus/hairless-midiserial](https://github.com/projectgus/hairless-midiserial) that stopped working with OS X Catalina.
+This is a replacement for [https://github.com/projectgus/hairless-midiserial](https://github.com/projectgus/hairless-midiserial) and [https://github.com/chava100f/SerialMidiBridge](https://github.com/chava100f/SerialMidiBridge).
 
 It is based on the excellent [serialmidi](https://github.com/raspy135/serialmidi) python script. I just refactored it a bit to be able to add a Gui.
 
@@ -9,7 +9,7 @@ Not as fancy as hairless-midiserial, but it works and is for end-users easier to
 ### Download
 
 ```
-git clone https://github.com/chromalock/SerialMidiBridge
+git clone https://github.com/chromalock/serial2midi
 ```
 
 ### Install Dependencies
@@ -22,12 +22,23 @@ pip install -r requirements.txt
 
 After starting you will be able to choose the serial port, baudrate, serial-to-midi port and midi-to-serial port. The Scan button will re-scan for available serial and midi ports. Your selection is remembered for next usage. After starting the server no changes can be made until the server is stopped.
 
+### Usage (Linux)
+
+If you wish to create a virtual MIDI device, you will need to make sure the correct kernel module is loaded:
+
+```bash
+sudo modprobe snd_virmidi midi_devs=1
+```
+
+You can then choose "Virtual Raw MIDI ..." as your serial2midi/midi2serial ports.
+
+
 ### Starting from the command line
 
 It can also be started in the Terminal after downloading the python script as follows:
 
 ```
-python3 SerialMidiBridge.py
+python3 serial2midi.py
 ```
 
 This requires some python extra packages. You can install them as follows:
@@ -41,7 +52,7 @@ pip install pyserial python-rtmidi pysimplegui
 If you want to make changes or build your own application you can use pyinstaller:
 
 ```
-pyinstaller --onefile --windowed SerialMidiBridge.py
+pyinstaller --onefile --windowed serial2midi.py
 ```
 
 N.B. pyinstaller can be installed as follows:
@@ -54,8 +65,4 @@ You are free to modify it as long as it's not for commercial purposes.
 
 ### Notes
 
-Due to the use of [PySimpleGui](https://pypi.org/project/PySimpleGUI/) there are some cosmetic 'features':
-
-- There is extra space after all texts because the width in characters is set for a non-proportional font.
-- After re-scanning for ports it might be that the baudrate selection is not resized.
-- When the previously used serial port is not available at startup its name might still be in the selection box.
+This is a fork of [https://github.com/chava100f/SerialMidiBridge](https://github.com/chava100f/SerialMidiBridge), except the dependency on `PySimpleGui` has been swapped out for `FreeSimpleGui`.
