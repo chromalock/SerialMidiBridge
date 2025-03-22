@@ -6,11 +6,6 @@ It is based on the excellent [serialmidi](https://github.com/raspy135/serialmidi
 
 Not as fancy as hairless-midiserial, but it works and is for end-users easier to use than the serialmidi script (I know at least one of them :wink:).
 
-A complete application for OS X can be downloaded from: [SerialMidiBridge.app.zip](https://mega.nz/file/k5skCQqL#Gu-krXfbGkKWxxRzex5TsaKGbu9fc9izKQyb72-ZagA).
-
-It also works on Linux (at least on Lubuntu19). A complete application for Linux can be downloaded from:
-[SerialMidiBridgeLinux.zip](https://mega.nz/file/Ug9h1QTB#_gvN7DPf7y9jejG2K-4btN61jieIyUxwtCvAK9iOorQ)
-
 ### Download
 
 ```
