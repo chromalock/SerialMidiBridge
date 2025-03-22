@@ -38,13 +38,7 @@ You can then choose "Virtual Raw MIDI ..." as your serial2midi/midi2serial ports
 It can also be started in the Terminal after downloading the python script as follows:
 
 ```
-python3 serial2midi.py
-```
-
-This requires some python extra packages. You can install them as follows:
-
-```
-pip install pyserial python-rtmidi pysimplegui
+python ./serial2midi.py
 ```
 
 ### Adapting/building
