@@ -2,7 +2,7 @@
 
 This is a replacement for [https://github.com/projectgus/hairless-midiserial](https://github.com/projectgus/hairless-midiserial) and [https://github.com/chava100f/SerialMidiBridge](https://github.com/chava100f/SerialMidiBridge).
 
-It is based on the excellent [serialmidi](https://github.com/raspy135/serialmidi) python script. I just refactored it a bit to be able to add a Gui.
+It is based on the excellent [serialmidi](https://github.com/raspy135/serialmidi) python script.
 
 Not as fancy as hairless-midiserial, but it works and is for end-users easier to use than the serialmidi script (I know at least one of them :wink:).
 
