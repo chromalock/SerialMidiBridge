@@ -1,7 +1,3 @@
-### Notification:
-
-The development on this branch has stopped. Development continues (with a more modern GUI that will work on new MacOs versions) on: [https://github.com/chava100f/SerialMidiBridge](https://github.com/chava100f/SerialMidiBridge).
-
 ### SerialMidiBridge
 
 This is a replacement for [https://github.com/projectgus/hairless-midiserial](https://github.com/projectgus/hairless-midiserial) that stopped working with OS X Catalina.
@@ -14,6 +10,18 @@ A complete application for OS X can be downloaded from: [SerialMidiBridge.app.zi
 
 It also works on Linux (at least on Lubuntu19). A complete application for Linux can be downloaded from:
 [SerialMidiBridgeLinux.zip](https://mega.nz/file/Ug9h1QTB#_gvN7DPf7y9jejG2K-4btN61jieIyUxwtCvAK9iOorQ)
+
+### Download
+
+```
+git clone https://github.com/chromalock/SerialMidiBridge
+```
+
+### Install Dependencies
+
+```
+pip install -r requirements.txt
+```
 
 ### Usage
 
